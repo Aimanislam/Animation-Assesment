@@ -1,0 +1,104 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28, 28, 75);
+}
+
+.box{
+    width: 400px;
+    height: 220px;
+    background-color: rgb(62, 62, 90);
+    border-radius: 20px;
+    margin-top: 200px;
+    margin-left: 450px;
+   
+}
+
+.box h1{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-family: arial;
+
+}
+
+.box p{
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-family: arial;
+}
+
+.box button{
+    height: 45px;
+    width: 125px;
+    color: white;
+    border: none;
+    font-size: medium;
+    background-color: rgb(241, 115, 136);
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 30px;
+    font-family: arial;
+    margin-top: 0%;
+}
+
+.animation-box{
+    background-color: rgb(15, 147, 199);
+    height: 500px;
+    width: 700px; 
+    border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+    position: relative;
+    left: 20%;
+    opacity: 50%;
+    transition-property: all;
+    transition-timing-function: linear;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-direction: alternate-reverse;
+    animation: rotation 8s infinite;
+}
+
+.animation-box:hover{
+    background-color: rgb(15, 147, 199);
+    height: 500px;
+    width: 700px; 
+    border-radius: 34% 64% 77% 26% / 73% 54% 45% 19%;
+    animation-name: myanimation;
+    position: relative;
+    left: 20%;
+    right: 50%;
+    transition: all 8s ease-in-out;
+    background: linear-gradient(-45deg, #e73c7e, #9c0c78, #169ace);
+	animation: gradient 20s;
+    animation: rotation 8s infinite;
+}
+
+@keyframes gradient {
+	0% {
+		position: 0% 50%;
+	}
+
+	50% {
+		position: 100% 50%; 
+	}
+	100% {
+		position: 0% 50%; 
+	
+	}
+}
+
+@keyframes rotation {
+ from{
+      transform: rotate(10deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  } 
